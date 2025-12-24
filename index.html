@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header with Logo and Navigation -->
+    <header>
+        <img src="logo.png" alt="Logo" style="height: 50px;">
+        <h1>Welcome to My Personal Website!</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" data-aos="fade-up">
+        <h2>Home</h2>
+        <p>Welcome to my personal website! Here, you’ll find information about me, my work, and how you can get in touch. Feel free to explore the sections below.</p>
+        <p>As a passionate knowledge chaser, I’m always eager to learn new things and create innovative solutions. My life is mine, so is my dream. If you get curious about anything always chase knowlegde and then the wisdom to apply it will follow, Always believe that you’re in the right place, and that you are the only you!</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p>Hello! I’m Iconic-Tytan, a bobbling individual with a unique view of the world. Surprisingly I see the wolrd as gray as it can be but still hold my optimisim up. My path is my path and I will illuminate everything with it. They never saw me coming
+They will never see me coming
+With the speed of light
+I shine bright. Not too creative but I have an unfathomable imagination and I love adding sentiment to all I do. I find being kind, humble but knowing who you are visually appealing.</p>
+        <p>When I’m not getting commissions I'm having fun, you can find me reading a novel, manhwa, comics, manga and webnovels. I have always wanted to learn to play the guitar, or reading up on the latest tech trends. I’m always looking for new things learn and to work on, so if you have something in mind, don’t hesitate to reach out!</p>
+        <img src="profile.jpg" alt="Peres Derick Tari" style="width: 200px; border-radius: 50%; margin-top: 20px;">
+    </section>
+
+    <!-- Contact Section with Form -->
+    <section id="contact" data-aos="fade-up">
+        <h2>Contact Me</h2>
+        <p>If you’d like to get in touch, feel free to reach out via the form below, or email me directly at <a href="mailto:fleetingfeelings909@gmail.com">Fleetingfeelings909@gmail.com</a>.</p>
+        
+        <form id="contactForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Iconic-Tytan | Knowledge chaser</p>
+        <p><a href="https://github.com/peresderick" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/peresderick" target="_blank">LinkedIn</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
+2. style.css – Styling for a Clean, Modern Look:
+css
+Copy
+Edit
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+header img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sections Styling */
+section {
+    padding: 20px;
+    margin: 15px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #4CAF50;
+}
+
+section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+section img {
+    margin-top: 20px;
+}
+
+/* Contact Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    header {
+        font-size: 1.2rem;
+    }
+
+    section {
+        padding: 15px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 20px;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+}
+3. script.js – Interactive Features:
+javascript
+Copy
+Edit
+// AOS (Animate On Scroll) Initialization
+AOS.init();
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Contact Form Submission
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('Thank you for your message! We will get back to you soon.');
+    document.getElementById('contactForm').reset(); // Reset the form
+});
+Features Included:
+Home Section: The home page welcomes visitors with a brief introduction.
+
+About Me Section: Information about you, including skills and hobbies, as well as a profile picture.
+
+Contact Section: A functional contact form that sends an alert when submitted, along with an email link.
+
+Responsive Design: Ensures that the website is mobile-friendly and adjusts to different screen sizes.
+
+Smooth Scrolling: Smooth transition when navigating between sections.
+
+Animations: Sections fade in when they come into view, powered by AOS.
+
+Footer: Includes links to your GitHub and LinkedIn profiles.
+
+Customization:
+Logo: Replace logo.png with your logo file.
+
+Profile Image: Replace profile.jpg with your own profile picture.
+
+Text: You can easily update the text in the Home, About, and Contact sections to reflect your personal info.
+
+Contact Email: Modify the mailto:fleetingfeelings@gmail.com with your own email address.
